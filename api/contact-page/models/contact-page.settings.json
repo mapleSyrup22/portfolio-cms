@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "ContactPage",
+  "info": {
+    "name": "ContactPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "githubLink": {
+      "type": "string",
+      "required": true
+    },
+    "mobileNumber": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "linkedInLink": {
+      "type": "string"
+    }
+  }
+}

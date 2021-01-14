@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Portfolios",
+  "info": {
+    "name": "Portfolios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "screenshots": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "githubLink": {
+      "type": "string"
+    },
+    "demoLink": {
+      "type": "string"
+    }
+  }
+}
