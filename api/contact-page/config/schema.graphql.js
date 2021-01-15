@@ -3,11 +3,17 @@ module.exports = {
         input ContactMail {
             subject: String!
             replyTo: String!
-            body: String!
-        }
+			body: String!
+			captcha: String!
+		}
+		
+		type ServerResponse {
+			success: Boolean!
+			message: String!
+		}
     `,
 	mutation: `
-        sendMail(mail: ContactMail): Boolean
+        sendMail(mail: ContactMail): ServerResponse
     `,
 	resolver: {
 		Mutation: {
