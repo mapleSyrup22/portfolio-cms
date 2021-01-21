@@ -28,9 +28,9 @@ module.exports = ({ env }) => {
 					database: env("DATABASE_NAME"),
 					username: env("DATABASE_USER"),
 					password: env("DATABASE_PASS")
-				}
-			},
-			options: {}
+				},
+				options: {}
+			}
 		}
 	};
 };
