@@ -56,7 +56,12 @@ module.exports = {
 			captchaUrl.searchParams.append("response", captcha);
 			const captchaResponse = await axios.post(captchaUrl.href);
 
-			if (!captchaResponse?.data?.success && captchaResponse?.data?.score < 0.5) {
+			if (
+				captchaResponse &&
+				captchaResponse.data &&
+				captchaResponse.data.success &&
+				captchaResponse.data.score < 0.5
+			) {
 				throw new Error("Captcha verification failed.");
 			}
 			await transport.sendMail({
