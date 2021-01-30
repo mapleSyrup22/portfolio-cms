@@ -35,6 +35,9 @@
     },
     "demoLink": {
       "type": "string"
+    },
+    "skills": {
+      "collection": "skills"
     }
   }
 }
