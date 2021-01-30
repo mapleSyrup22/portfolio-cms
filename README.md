@@ -1,6 +1,6 @@
 # CMS for www.ramilamparo.com
 
-## Requred environment variables
+## Required environment variables
 
 You can create a `.env` file in the root folder with the following required environment variables. You can rename the `.env.example` to `.env` and replace it with your own values.
 
@@ -17,6 +17,10 @@ You can create a `.env` file in the root folder with the following required envi
 `EMAIL_PASS=your_email_password_123` Your smtp email pass.
 
 `CAPTCHA_SECRET_KEY=CaptchaSecretKey` Your captca secret key to prevent bots.
+
+### Production environment variables.
+
+The following variables are required in production environment.
 
 `DATABASE_USER=root` Your database username.
 
