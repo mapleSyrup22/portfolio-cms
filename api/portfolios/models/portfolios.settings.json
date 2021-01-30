@@ -37,7 +37,9 @@
       "type": "string"
     },
     "skills": {
-      "collection": "skills"
+      "collection": "skills",
+      "via": "portfolios",
+      "dominant": true
     }
   }
 }

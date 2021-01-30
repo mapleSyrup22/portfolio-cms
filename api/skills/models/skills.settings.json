@@ -13,6 +13,10 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "portfolios": {
+      "via": "skills",
+      "collection": "portfolios"
     }
   }
 }
